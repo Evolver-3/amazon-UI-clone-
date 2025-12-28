@@ -2,10 +2,14 @@ import React from 'react'
 
 const Nav2 = () => {
   return (
-    <div>
+    <form>
+
+      <button>All</button>
+
+      
       
 
-    </div>
+    </form>
   )
 }
 

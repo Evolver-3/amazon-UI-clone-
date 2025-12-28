@@ -5,12 +5,13 @@ const Nav1 = () => {
 
   const [location,setLocation]=useState("");
   const [pin,setPin]=useState("");
+  const[limit,setLimit]=useState(false);
 
   const handleClick=(e)=>{
     e.preventDefault();
     setPin(e.target[0].value);
-    console.log(pin);
     setLocation(false);
+    setLimit(true);
 
   }
 
@@ -31,7 +32,7 @@ const Nav1 = () => {
         <span><i className='bx bx-location text-white'></i></span>
         
         <div>
-          <p className='text-sm  text-neutral-200'>Delivering to {pin}</p>
+          <p className='text-sm  text-neutral-200'>Delivering to {limit&&pin?pin:"Arundathi"}</p>
           
           <h2 className='text-sm font-semibold text-neutral-300'>Update location</h2>
         </div>
