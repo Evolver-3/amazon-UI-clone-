@@ -3,7 +3,16 @@ import assets from '../../assets/index.js'
 
 const Nav1 = () => {
 
-  const [location,setLocation]=useState("")
+  const [location,setLocation]=useState("");
+  const [pin,setPin]=useState("");
+
+  const handleClick=(e)=>{
+    e.preventDefault();
+    setPin(e.target[0].value);
+    console.log(pin);
+    setLocation(false);
+
+  }
 
   return (
     <>
@@ -17,39 +26,50 @@ const Nav1 = () => {
         <span className='absolute top-[20px] left-28 text-md'>.in</span>
       </div>
         
-      <div className='flex items-center py-3 gap-3 hover:border hover:border-white' onClick={()=>setLocation(!location)}>
+      <div className='flex items-center px-2 py-3 gap-3 hover:border hover:border-white' onClick={()=>setLocation(!location)}>
+
         <span><i className='bx bx-location text-white'></i></span>
         
         <div>
-          <p className='text-sm  text-neutral-200'>Delivering to </p>
+          <p className='text-sm  text-neutral-200'>Delivering to {pin}</p>
           
           <h2 className='text-sm font-semibold text-neutral-300'>Update location</h2>
         </div>
 
       </div>
 
-      
-
     </div>
 
     {location && (
-        <div className='container w-80 h-50 bg-white rounded-xl shadow-lg flex flex-col fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
+        <div className='container w-80 h-60 bg-white rounded-xl shadow-lg flex flex-col fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
 
-          <div className='h-[30%] bg-neutral-200 rounded-t-xl flex justify-between px-3 items-center border-b-1 border-neutral-300'>
-            <p className='text-md font-semibold leading-tight'>Choose your location</p>
+          <div className='h-[30%] bg-neutral-200 rounded-t-xl flex justify-between px-5 items-center border-b-1 border-neutral-300'>
+            <p className='text-md font-semibold leading-tight text-gray-700'>Choose your location</p>
 
-            <i className='bx bx-x bx-sm border-1 border-neutral-400 px-3 py-3 rounded-xl text-neutral-900 hover:text-neutral-600' onClick={()=>location(false)}></i> 
+            <i className='bx bx-x bx-sm border-1 border-neutral-400 px-3 py-3 rounded-xl text-neutral-900 hover:text-neutral-600' onClick={()=>setLocation(false)}></i> 
 
           </div>
 
-          <div className=''>
-            <p className='text-[15px]'>Select a delivery location to see product availability and delivery options</p>
+          <div className='px-5 w-full flex flex-col items-center gap-3 justify-center mt-3'>
+            <p className='text-[12px] text-neutral-500'>Select a delivery location to see product availability and delivery options</p>
 
-            <button className='bg-yellow-500 w-full rounded-full mx-5 text-black text-md'>Sign in to see your addresses</button>
+            <button className='w-full bg-yellow-500 rounded-full text-black text-[15px] px-2 py-1'>Sign in to see your addresses</button>
 
-        
           </div>
 
+          <div className='flex flex-row items-center justify-center w-[100%] gap-2 mt-2'>
+            <span className='border-neutral-400 border-1 w-[23%]'></span>
+            <span className='text-[12px] text-neutral-500'>or enter an indian pincode</span>
+            <span className='border-neutral-400 border-1 w-[20%]'></span>
+
+          </div>
+
+          <form className='mx-5 flex gap-3 mt-2' onSubmit={handleClick} >
+
+            <input type="text" className=' border-1 border-neutral-400 px-2 py-1 rounded-md focus:outline-none'/>
+
+            <button className='outline outline-neutral-400 rounded-full text-[15px] px-3 py-1 focus:outline-blue-400 focus:outline'>Apply</button>
+          </form>
 
         </div>
       )}
