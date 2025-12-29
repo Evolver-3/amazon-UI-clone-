@@ -9,7 +9,7 @@ const Nav3 = () => {
   const [update,setUpdate]=useState();
 
   return (<>
-    <div onMouseEnter={()=>setOpen(!open)} className='flex flex-row'>
+    <div onMouseEnter={()=>setOpen(!open)} className='flex flex-row hover:border hover:border-white py-2 px-1'>
       <img src={assets.map} className='w-6'></img>
       <h2 className='text-sm font-semibold text-neutral-300'>EN{update}</h2>
       <i className='bx bx-caret-down text-neutral-400'></i>
