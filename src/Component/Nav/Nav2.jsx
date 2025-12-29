@@ -18,7 +18,7 @@ const Nav2 = () => {
 
       <form className='flex text-center justify-center'>
 
-        <motion.input type='text' placeholder='Search Amazon.in ' className="max-w-240 lg:w-140 h-10 px-2 border border-neutral-400 focus:outline-none" onFocus={()=>setHover(true)} onMouseOut={()=>setHover(false)}></motion.input>
+        <motion.input type='text' placeholder='Search Amazon.in ' className="max-w-220 lg:w-130 h-10 px-2 border border-neutral-400 focus:outline-none" onFocus={()=>setHover(true)} onMouseOut={()=>setHover(false)}></motion.input>
 
         <button className='bg-yellow-400 hover:bg-yellow-500 h-10 w-18 py-2 rounded-r-md '><i className='bx bx-search bx-sm'></i></button>
       </form>
@@ -27,9 +27,9 @@ const Nav2 = () => {
     </motion.div>
 
     {open && (
-      <div cn="absolute mt-12 bg-white w-48 shadow-lg rounded-md p-3">
+      <div className="absolute mt-12 bg-white w-48 h-42 shadow-lg  top-3 left-86 z-10 overflow-y-auto">
         {navItems.map((item,index)=>(
-          <div key={index}>{item.name}</div>
+          <div key={index} className='text-gray-500 hover:text-white hover:bg-blue-400 w-full px-3'>{item.name}</div>
         ))}
       </div>
     )}

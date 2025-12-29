@@ -17,17 +17,17 @@ const Nav1 = () => {
 
   return (
     <>
-    <div className='flex flex-row items-center gap-3 '>
+    <div className='flex flex-row items-center gap-3 h-[100%]]'>
 
-      <div className='relative px-2 hover:border hover:border-white text-center'>
+      <div className='relative h-[50%] px-2 hover:border hover:border-white text-center'>
         <a href="#" className='relative'>
-          <img src={assets.logo} alt="logo" className='w-30 h-15 ' ></img>
+          <img src={assets.logo} alt="logo" className='w-25' ></img>
         </a>
         
-        <span className='absolute top-[20px] left-28 text-md'>.in</span>
+        <span className='absolute top-[10px] left-24 text-md'>.in</span>
       </div>
         
-      <div className='flex items-center px-2 py-3 gap-3 hover:border hover:border-white' onClick={()=>setLocation(!location)}>
+      <div className='flex items-center px-1 py-1 gap-3 hover:border hover:border-white' onClick={()=>setLocation(!location)}>
 
         <span><i className='bx bx-location text-white'></i></span>
         

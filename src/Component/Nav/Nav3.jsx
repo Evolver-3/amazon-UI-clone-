@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import assets from '../../assets';
 
+const langItems=[{id:1,code:"EN"},{id:2,code:"HI"},{id:3,code:"FR"},{id:4,code:"DE"},{id:5,code:"IT"}]
+
 const Nav3 = () => {
   const[open,setOpen]=useState(false);
   const [update,setUpdate]=useState();
@@ -15,7 +17,8 @@ const Nav3 = () => {
     </div>
 
     {open && (
-      <div>
+      <div className='absolute top-20 right-60 w-40 shadow-lg rounded-md z-50 text-sm bg-white flex flex-col py-2 px-2'>
+
 
       </div>
     )}
