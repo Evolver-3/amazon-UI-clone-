@@ -1,14 +1,7 @@
 import React from 'react'
 
 const sidebarData = [
-  {
-    section: "Hello, Sign in",
-    type: "header",
-    items: [
-      {id:1,title:"Account & Lists"}
-    ]
-  },
-
+ 
   {
     section: "Trending",
     type: "list",
@@ -23,12 +16,12 @@ const sidebarData = [
     section:"Digital Content and Devices",
     type:"category",
     items: [
-      {id:1,title:"Echo & Alexa"},
-      {id:2,title:"Fire TV"},
-      {id:3,title:"Kindle E-readers & eBooks"},
-      {id:4,title:"Audible Audiobooks"},
-      {id:5,title:"Amazon Prime Video"},
-      {id:6,title:"Amazon Prime Music"}
+      {id:1,title:"Echo & Alexa",submenu:true},
+      {id:2,title:"Fire TV",submenu:true},
+      {id:3,title:"Kindle E-readers & eBooks",submenu:true},
+      {id:4,title:"Audible Audiobooks",submenu:true},
+      {id:5,title:"Amazon Prime Video",submenu:true},
+      {id:6,title:"Amazon Prime Music",submenu:true}
     ]
   },
 
@@ -36,59 +29,11 @@ const sidebarData = [
     section:"Shop by Category",
     type:"category",
     items: [
-      {id:1,title:"Mobiles, Computers"},
-      {id:2,title:"TV, Appliances, Electronics"},
-      {id:3,title:"Men's Fashion"},
-      {id:4,title:"Women's Fashion"},
-      {id:5,title:"Cameras & Photography"},
-      {id:6,title:"Computer Peripherals"}
-    ]
-  },
-
-  {
-    section: "Fashion",
-    type: "category",
-    items: [
-      {id:1,title:"Men’s Clothing"},
-      {id:2,title:"Women’s Clothing"},
-      {id:3,title:"Kids’ Clothing"},
-      {id:4,title:"Footwear"},
-      {id:5,title:"Watches"},
-      {id:6,title:"Bags & Luggage"}
-    ]
-  },
-
-  {
-    section:"Home, Kitchen & Living",
-    type:"category",
-    items: [
-      {id:1,title:"Home Décor"},
-      {id:2,title:"Furniture"},
-      {id:3,title:"Kitchen & Dining"},
-      {id:4,title:"Home Improvement"},
-      {id:5,title:"Lighting & Electricals"}
-    ]
-  },
-
-  {
-    section:"Beauty, Health & Personal Care",
-    type:"category",
-    items: [
-      {id:1,title:"Makeup"},
-      {id:2,title:"Skincare"},
-      {id:3,title:"Hair Care"},
-      {id:4,title:"Fragrances"},
-      {id:5,title:"Health & Wellness"}
-    ]
-  },
-
-  {
-    section:"Toys, Baby & Kids",
-    type:"category",
-    items: [
-      {id:1,title:"Toys & Games"},
-      {id:2,title:"Baby Products"},
-      {id:3,title:"School Supplies"}
+      {id:1,title:"Mobiles, Computers",submenu:true},
+      {id:2,title:"TV, Appliances, Electronics",submenu:true},
+      {id:3,title:"Men's Fashion",submenu:true},
+      {id:4,title:"Women's Fashion",submenu:true},
+      {id:5,title:"See all",bottomMenu:true}
     ]
   },
 
@@ -96,11 +41,11 @@ const sidebarData = [
     section:"Programs & Features",
     type:"list",
     items: [
-      {id:1,title:"Amazon Pay"},
-      {id:2,title:"Gift Cards"},
+      {id:1,title:"Gift Cards & Mobile Recharges",submenu:true},
+      {id:2,title:"Amazon Launchpad"},
       {id:3,title:"Amazon Business"},
-      {id:4,title:"Subscribe & Save"},
-      {id:5,title:"Try Prime"}
+      {id:4,title:"Handloom and Handicrafts"},
+      {id:5,title:"See all",bottomMenu:true}
     ]
   },
 
@@ -108,29 +53,53 @@ const sidebarData = [
     section: "Help & Settings",
     type: "settings",
     items: [
-      {id:1,title:"Your Orders"},
-      {id:2,title:"Your Wish List"},
-      {id:3,title:"Your Prime Membership"},
-      {id:4,title:"Language: English / हिन्दी"},
-      {id:5,title:"Location: Kanpur"},
-      {id:6,title:"Customer Service"},
-      {id:7,title:"Sign Out",danger:true}
+      {id:1,title:"Your Account"},
+      {id:2,title:"Customer Service"},
+      {id:3,title:"Sign in"}
     ]
   }
 ];
 
 
-const SideNav = ({open}) => {
+const SideNav = ({open,setOpen}) => {
 
   return (
     <div>
       {open && (
-        <div className='absolute top-20 right-10 w-80 shadow-lg rounded-md z-50 text-sm bg-black flex flex-col py-2 px-2'>
+        <div className='fixed top-0 w-70 h-screen shadow-lg z-50 text-sm bg-white flex flex-col overflow-y-auto '>
+          
 
-        </div>
-      )}
+          <div className='bg-neutral-800 flex items-center px-4 text-white text-[20px]  gap-3 py-3'>
+            <i class='bxr bx-user-circle'></i>
+            <h1>Hello, sign in</h1>
+          </div>
+          {sidebarData.map((data,index)=>(
+            <div key={index} className='border-b border-gray-400 py-3'>
+
+              <h3 className='font-bold text-sm px-4 mb-2 text-neutral-800'>{data.section}</h3>
+
+              <ul className='flex flex-col'>
+                {data.items.map((item)=>(
+                  <li key={item.id} className='px-4 py-2 text-[14px]  cursor-pointer hover:bg-gray-200 flex justify-between items-center '
+                  >{item.title}
+                  
+                  {item.submenu && (
+                    <i className='bx bx-caret-right text-neutral-600 group'></i>
+                  )}
+
+                  {item.bottomMenu && (
+                    <i className='bx bx-caret-down text-neutral-600 group-hover:text-neutral-800'></i>
+                  )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+           
+      ))}
     </div>
   )
 }
+</div>
+)}
 
 export default SideNav
