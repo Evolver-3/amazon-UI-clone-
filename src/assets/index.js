@@ -44,14 +44,17 @@ const assets={
   logo,map,backimage1,backimage2,backimage3,backimage4,img1_1,img1_2,img1_3,img1_4,img2_1,img2_2,img2_3,img2_4,img3_1,img3_2,img3_3,img3_4,img4_1,img4_2,img4_3,img4_4,img5_1,img5_2,img5_3,img5_4,img6_1,img6_2,img6_3,img6_4,img7_1,img7_2,img7_3,img7_4,img8_1,img8_2,img8_3,img8_4
 }
 
+
 export const navItems=[{id:1,name:"ALL"},{id:2,name:"Amazon miniTV"},{id:3,name:"Sell"},{id:4,name:"Best Sellers"},{id:5,name:"Mobiles"},{id:6,name:"Customer Service"},{id:7,name:"Today's Deals"},{id:8,name:"Electronics"},{id:9,name:"Fashion"},{id:10,name:"New Releases"},{id:11,name:
 "Books"},{id:12,name:"Home & Kitchen"},{id:13,name:"Amazon Pay",},{id:14,name:"Computers"},{id:15,name:"Beauty"}]
 
 export default assets
 
 
+
 export const boxes=[
   {
+    id:1,
     section:"Revamp your home in style",
     type:"category",
     items:[
@@ -63,6 +66,7 @@ export const boxes=[
     links:"Explore all"
   },
    {
+    id:2,
     section:"Bulk order discounts + Up to 18% GST savings",
     type:"category",
     items:[
@@ -74,6 +78,7 @@ export const boxes=[
     links:"Create a free account"
   },
     {
+      id:3,
     section:"Appliances for your home | Up to 55% off",
     type:"category",
     items:[
@@ -85,6 +90,7 @@ export const boxes=[
     links:"See more"
   },
     {
+      id:4,
     section:"Starting ₹49 | Deals on home essentials",
     items:[
       {id:1,image:assets.img4_1,text:"Cleaning supplies"},
@@ -95,6 +101,7 @@ export const boxes=[
     links:"Explore all"
   },
     {
+      id:5,
     section:"Starting ₹149 | Headphones",
     type:"category",
     items:[
@@ -106,6 +113,7 @@ export const boxes=[
     links:"See all offers"
   },
     {
+      id:6,
     section:"Automotive essentials | Up to 60% off",
     type:"category",
     items:[
@@ -117,6 +125,7 @@ export const boxes=[
     links:"Explore all"
   },
     {
+      id:7,
     section:"Starting ₹199 | Amazon Brands & more",
     type:"category",
     items:[
@@ -128,6 +137,7 @@ export const boxes=[
     links:"See more"
   },
     {
+      id:8,
     section:"Up to 50% off | Baby care & toys | Amazon Brands",
     type:"category",
     items:[

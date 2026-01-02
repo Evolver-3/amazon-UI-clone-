@@ -68,7 +68,6 @@ const SideNav = ({open,setOpen}) => {
       {open && (
         <div className='fixed top-0 w-70 h-screen shadow-lg z-50 text-sm bg-white flex flex-col overflow-y-auto '>
           
-
           <div className='bg-neutral-800 flex items-center px-4 text-white text-[20px]  gap-3 py-3'>
             <i class='bxr bx-user-circle'></i>
             <h1>Hello, sign in</h1>

@@ -3,6 +3,7 @@ import SecNav from "./Component/secondnav/SecNav"
 import { motion } from "motion/react"
 import assets from "./assets"
 import { useEffect, useState } from "react";
+import Body from "./Component/body/Body";
 
 function App() {
 
@@ -28,11 +29,11 @@ function App() {
     <motion.div
     animate={{backgroundImage:`url(${backImages[index]})`}}
     transition={{duration:1}}
-    className='min-w-[1324px] max-h-100vh h-screen bg-cover bg-no-repeat bg-center'>
-      
-      
-
+    className='min-w-[1324px] max-h-100vh h-screen bg-cover bg-no-repeat bg-center py-60'>
+        <Body/>
+  
     </motion.div>
+      
     </div>
   )
 }

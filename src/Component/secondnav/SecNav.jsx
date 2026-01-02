@@ -9,7 +9,7 @@ const SecNav = () => {
   const [open,setOpen]=useState(false);
 
   return (<>
-    <div className='relative min-h-10  flex gap-4 items-center bg-black text-white '>
+    <div className='relative min-h-6  flex gap-4 items-center bg-black text-white '>
       <div className='relative flex gap-1 items-center text-[13px] hover:border hover:border-white py-1 px-1' onClick={()=>setOpen(!open)} >
         <i className='bx bx-menu'></i>
         <h1>All</h1>
