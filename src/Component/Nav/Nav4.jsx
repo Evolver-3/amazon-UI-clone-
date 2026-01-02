@@ -20,24 +20,24 @@ const rightbar=[{id:1,title:"Your Account"},{id:2,title:"Your Orders"},{id:3,tit
   return (<>
     <div className='flex gap-3 items-center relative'>
 
-      <div className='flex flex-col text-left hover:border hover:border-white px-1' onClick={()=>setOpen(!open)}>
-        <h3 className='text-sm  text-neutral-200'>Hello, sign in</h3>
+      <div className='flex flex-col text-left hover:border hover:border-white px-2 py-1.5 leading-tight' onClick={()=>setOpen(!open)}>
+        <h3 className='text-[12px]  text-neutral-200'>Hello, sign in</h3>
         <div className='flex'>
-          <h2 className='text-sm font-semibold text-neutral-300'>Account & Lists</h2>
+          <h2 className='text-[15px] font-bold text-white'>Account & Lists</h2>
           <i className='bx bx-caret-down text-neutral-400'></i>
         </div>
 
 
       </div>
 
-      <div className='flex flex-col text-left hover:border hover:border-white px-1'>
-        <h3 className='text-sm  text-neutral-200'>Returns</h3>
-        <h2 className='text-sm font-semibold text-neutral-300'>& Orders</h2>
+      <div className='flex flex-col text-left hover:border hover:border-white px-2 py-1.5 leading-tight'>
+        <h3 className='text-[12px]  text-neutral-200'>Returns</h3>
+        <h2 className='text-[15px] font-bold text-white'>& Orders</h2>
       </div>
 
       <div className='flex hover:border hover:border-white px-2 py-2'>
         <i className='bx bx-cart bx-sm text-white'></i>
-        <p className='text-white text-md '>Cart</p>
+        <p className='text-[15px] font-bold text-white'>Cart</p>
       </div>
       
 

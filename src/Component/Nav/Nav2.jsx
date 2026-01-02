@@ -9,18 +9,18 @@ const Nav2 = () => {
   const [open,setOpen]=useState(false);
 
   return (<>
-    <motion.div className="h-10 bg-white py-2 rounded-md flex flex-row items-center group " 
+    <motion.div className="h-8 bg-white py-2 rounded-md flex flex-row items-center group " 
     style={hover ? { outline: '3px solid orange' } :{}}>
 
-      <button className='bg-neutral-200 h-10 w-15 rounded-l-md text-md text-neutral-700 hover:bg-neutral-300 hover:text-neutral-600 focus:outline-3 focus:outline-orange-400 flex items-center justify-center relative'>All
+      <button className='bg-neutral-200 h-8 w-15 rounded-l-md text-md text-neutral-700 hover:bg-neutral-300 hover:text-neutral-600 focus:outline-3 focus:outline-orange-400 flex items-center justify-center relative'>All
         <i className='bx bx-caret-down relative' onClick={()=>setOpen(!open)}></i>
       </button>
 
       <form className='flex text-center justify-center'>
 
-        <motion.input type='text' placeholder='Search Amazon.in ' className="max-w-220 lg:w-130 h-10 px-2 border border-neutral-400 focus:outline-none" onFocus={()=>setHover(true)} onMouseOut={()=>setHover(false)}></motion.input>
+        <motion.input type='text' placeholder='Search Amazon.in ' className="max-w-220 lg:w-130  px-2 border border-neutral-400 focus:outline-none" onFocus={()=>setHover(true)} onMouseOut={()=>setHover(false)}></motion.input>
 
-        <button className='bg-yellow-400 hover:bg-yellow-500 h-10 w-18 py-2 rounded-r-md '><i className='bx bx-search bx-sm'></i></button>
+        <button className='bg-yellow-400 hover:bg-yellow-500 h-8 w-18 py-1 rounded-r-md '><i className='bx bx-search bx-sm'></i></button>
       </form>
 
       

@@ -1,47 +1,74 @@
 import logo from './logo.png'
 import map from './map.jpg'
-import backimage1 from './backimage1.jpg'
-import backimage2 from './backimage2.jpg'
-import backimage3 from './backimage3.jpg'
-import backimage4 from './backimage4.jpg'
-import img1_1 from './img1_1.jpg'
-import img1_2 from './img1_2.jpg'
-import img1_3 from './img1_3.jpg'
-import img1_4 from './img1_4.jpg'
-import img2_1 from './img2_1.jpg'
-import img2_2 from './img2_2.jpg'
-import img2_3 from './img2_3.jpg'
-import img2_4 from './img2_4.jpg'
-import img3_1 from './img3_1.jpg'
-import img3_2 from './img3_2.jpg'
-import img3_3 from './img3_3.jpg'
-import img3_4 from './img3_4.jpg'
-import img4_1 from './img4_1.jpg'
-import img4_2 from './img4_2.jpg'
-import img4_3 from './img4_3.jpg'
-import img4_4 from './img4_4.jpg'
-import img5_1 from './img5_1.jpg'
-import img5_2 from './img5_2.jpg'
-import img5_3 from './img5_3.jpg'
-import img5_4 from './img5_4.jpg'
-import img6_1 from './img6_1.jpg'
-import img6_2 from './img6_2.jpg'
-import img6_3 from './img6_3.jpg'
-import img6_4 from './img6_4.jpg'
-import img7_1 from './img7_1.jpg'
-import img7_2 from './img7_2.jpg'
-import img7_3 from './img7_3.jpg'
-import img7_4 from './img7_4.jpg'
-import img8_1 from './img8_1.jpg'
-import img8_2 from './img8_2.jpg'
-import img8_3 from './img8_3.jpg'
-import img8_4 from './img8_4.jpg'
+import backimage1 from './backImage/backimage1.jpg'
+import backimage2 from './backImage/backimage2.jpg'
+import backimage3 from './backImage/backimage3.jpg'
+import backimage4 from './backImage/backimage4.jpg'
+import img1_1 from './boxImage/img1_1.jpg'
+import img1_2 from './boxImage/img1_2.jpg'
+import img1_3 from './boxImage/img1_3.jpg'
+import img1_4 from './boxImage/img1_4.jpg'
+import img2_1 from './boxImage/img2_1.jpg'
+import img2_2 from './boxImage/img2_2.jpg'
+import img2_3 from './boxImage/img2_3.jpg'
+import img2_4 from './boxImage/img2_4.jpg'
+import img3_1 from './boxImage/img3_1.jpg'
+import img3_2 from './boxImage/img3_2.jpg'
+import img3_3 from './boxImage/img3_3.jpg'
+import img3_4 from './boxImage/img3_4.jpg'
+import img4_1 from './boxImage/img4_1.jpg'
+import img4_2 from './boxImage/img4_2.jpg'
+import img4_3 from './boxImage/img4_3.jpg'
+import img4_4 from './boxImage/img4_4.jpg'
+import img5_1 from './boxImage/img5_1.jpg'
+import img5_2 from './boxImage/img5_2.jpg'
+import img5_3 from './boxImage/img5_3.jpg'
+import img5_4 from './boxImage/img5_4.jpg'
+import img6_1 from './boxImage/img6_1.jpg'
+import img6_2 from './boxImage/img6_2.jpg'
+import img6_3 from './boxImage/img6_3.jpg'
+import img6_4 from './boxImage/img6_4.jpg'
+import img7_1 from './boxImage/img7_1.jpg'
+import img7_2 from './boxImage/img7_2.jpg'
+import img7_3 from './boxImage/img7_3.jpg'
+import img7_4 from './boxImage/img7_4.jpg'
+import img8_1 from './boxImage/img8_1.jpg'
+import img8_2 from './boxImage/img8_2.jpg'
+import img8_3 from './boxImage/img8_3.jpg'
+import img8_4 from './boxImage/img8_4.jpg'
+
+import bike_1 from './scrollImage/bike_1.jpg'
+import bike_2 from './scrollImage/bike_2.jpg'
+import bike_3 from './scrollImage/bike_3.jpg'
+import bike_4 from './scrollImage/bike_4.jpg'
+import bike_5 from './scrollImage/bike_5.jpg'
+import bike_6 from './scrollImage/bike_6.jpg'
+import bike_7 from './scrollImage/bike_7.jpg'
+import bike_8 from './scrollImage/bike_8.jpg'
+import bike_9 from './scrollImage/bike_9.jpg'
+import bike_10 from './scrollImage/bike_10.jpg'
+import bike_11 from './scrollImage/bike_11.jpg'
+import bike_12 from './scrollImage/bike_12.jpg'
+import bike_13 from './scrollImage/bike_13.jpg'
+import bike_14 from './scrollImage/bike_14.jpg'
+import bike_15 from './scrollImage/bike_15.jpg'
+import bike_16 from './scrollImage/bike_16.jpg'
+import bike_17 from './scrollImage/bike_17.jpg'
+import bike_18 from './scrollImage/bike_18.jpg'
+import bike_19 from './scrollImage/bike_19.jpg'
+import bike_20 from './scrollImage/bike_20.jpg'
+import bike_21 from './scrollImage/bike_21.jpg'
+import bike_22 from './scrollImage/bike_22.jpg'
+import bike_23 from './scrollImage/bike_23.jpg'
+import bike_24 from './scrollImage/bike_24.jpg'
+
 
 
 
 
 const assets={
-  logo,map,backimage1,backimage2,backimage3,backimage4,img1_1,img1_2,img1_3,img1_4,img2_1,img2_2,img2_3,img2_4,img3_1,img3_2,img3_3,img3_4,img4_1,img4_2,img4_3,img4_4,img5_1,img5_2,img5_3,img5_4,img6_1,img6_2,img6_3,img6_4,img7_1,img7_2,img7_3,img7_4,img8_1,img8_2,img8_3,img8_4
+
+  logo,map,backimage1,backimage2,backimage3,backimage4,img1_1,img1_2,img1_3,img1_4,img2_1,img2_2,img2_3,img2_4,img3_1,img3_2,img3_3,img3_4,img4_1,img4_2,img4_3,img4_4,img5_1,img5_2,img5_3,img5_4,img6_1,img6_2,img6_3,img6_4,img7_1,img7_2,img7_3,img7_4,img8_1,img8_2,img8_3,img8_4,bike_1,bike_2,bike_3,bike_4,bike_5,bike_6,bike_7,bike_8,bike_9,bike_10,bike_11,bike_12,bike_13,bike_14,bike_15,bike_16,bike_17,bike_18,bike_19,bike_20,bike_21,bike_22,bike_23,bike_24
 }
 
 
@@ -148,4 +175,32 @@ export const boxes=[
     ],
     links:"See all essentials"
   }
+]
+
+
+export const scrolls=[
+{id:1,image:assets.bike_1},
+{id:2,image:assets.bike_2},
+{id:3,image:assets.bike_3},
+{id:4,image:assets.bike_4},
+{id:5,image:assets.bike_5},
+{id:6,image:assets.bike_6},
+{id:7,image:assets.bike_7},
+{id:8,image:assets.bike_8},
+{id:9,image:assets.bike_9},
+{id:10,image:assets.bike_10},
+{id:11,image:assets.bike_11},
+{id:12,image:assets.bike_12},
+{id:13,image:assets.bike_13},
+{id:14,image:assets.bike_14},
+{id:15,image:assets.bike_15},
+{id:16,image:assets.bike_16},
+{id:17,image:assets.bike_17},
+{id:18,image:assets.bike_18},
+{id:19,image:assets.bike_19},
+{id:20,image:assets.bike_20},
+{id:21,image:assets.bike_21},
+{id:22,image:assets.bike_22},
+{id:23,image:assets.bike_23},
+{id:24,image:assets.bike_24},
 ]

@@ -19,11 +19,9 @@ function App() {
     return ()=>clearInterval(timer)
   },[])
 
-
-
   return (
 
-    <div>
+    <div className="">
       <Navbar/>
       <SecNav/>
     <motion.div

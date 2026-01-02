@@ -27,14 +27,14 @@ const Nav1 = () => {
         <span className='absolute top-[10px] left-24 text-md'>.in</span>
       </div>
         
-      <div className='flex items-center px-1 py-1 gap-3 hover:border hover:border-white' onClick={()=>setLocation(!location)}>
+      <div className='flex items-center px-1 py-1 gap-1 hover:border hover:border-white' onClick={()=>setLocation(!location)}>
 
         <span><i className='bx bx-location text-white'></i></span>
         
-        <div>
-          <p className='text-sm  text-neutral-200'>Delivering to {limit&&pin?pin:"Arundathi"}</p>
+        <div className='leading-tight'>
+          <p className='text-[12px]  text-neutral-200'>Delivering to {limit&&pin?pin:"Arundathi"}</p>
           
-          <h2 className='text-sm font-semibold text-neutral-300'>Update location</h2>
+          <h2 className='text-[15px] font-bold text-white'>Update location</h2>
         </div>
 
       </div>
