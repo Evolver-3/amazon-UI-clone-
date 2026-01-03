@@ -62,13 +62,38 @@ import bike_22 from './scrollImage/bike_22.jpg'
 import bike_23 from './scrollImage/bike_23.jpg'
 import bike_24 from './scrollImage/bike_24.jpg'
 
+import pan_1 from './Tab1/pan_1.jpg'
+import pan_2 from './Tab1/pan_2.jpg'
+import pan_3 from './Tab1/pan_3.jpg'
+import pan_4 from './Tab1/pan_4.jpg'
+import pan_5 from './Tab1/pan_5.jpg'
+import pan_6 from './Tab1/pan_6.jpg'
+
+import bed_1 from './Tab2/bed_1.jpg'
+import bed_2 from './Tab2/bed_2.jpg'
+import bed_3 from './Tab2/bed_3.jpg'
+import bed_4 from './Tab2/bed_4.jpg'
+import bed_5 from './Tab2/bed_5.jpg'
+import bed_6 from './Tab2/bed_6.jpg'
+
+import car_1 from './Tab3/car_1.jpg'
+import car_2 from './Tab3/car_2.jpg'
+import car_3 from './Tab3/car_3.jpg'
+import car_4 from './Tab3/car_4.jpg'
+import car_5 from './Tab3/car_5.jpg'
+import car_6 from './Tab3/car_6.jpg'
 
 
-
+import bucket_1 from './Tab4/bucket_1.jpg'
+import bucket_2 from './Tab4/bucket_2.jpg'
+import bucket_3 from './Tab4/bucket_3.jpg'
+import bucket_4 from './Tab4/bucket_4.jpg'
+import bucket_5 from './Tab4/bucket_5.jpg'
+import bucket_6 from './Tab4/bucket_6.jpg'
 
 const assets={
 
-  logo,map,backimage1,backimage2,backimage3,backimage4,img1_1,img1_2,img1_3,img1_4,img2_1,img2_2,img2_3,img2_4,img3_1,img3_2,img3_3,img3_4,img4_1,img4_2,img4_3,img4_4,img5_1,img5_2,img5_3,img5_4,img6_1,img6_2,img6_3,img6_4,img7_1,img7_2,img7_3,img7_4,img8_1,img8_2,img8_3,img8_4,bike_1,bike_2,bike_3,bike_4,bike_5,bike_6,bike_7,bike_8,bike_9,bike_10,bike_11,bike_12,bike_13,bike_14,bike_15,bike_16,bike_17,bike_18,bike_19,bike_20,bike_21,bike_22,bike_23,bike_24
+  logo,map,backimage1,backimage2,backimage3,backimage4,img1_1,img1_2,img1_3,img1_4,img2_1,img2_2,img2_3,img2_4,img3_1,img3_2,img3_3,img3_4,img4_1,img4_2,img4_3,img4_4,img5_1,img5_2,img5_3,img5_4,img6_1,img6_2,img6_3,img6_4,img7_1,img7_2,img7_3,img7_4,img8_1,img8_2,img8_3,img8_4,bike_1,bike_2,bike_3,bike_4,bike_5,bike_6,bike_7,bike_8,bike_9,bike_10,bike_11,bike_12,bike_13,bike_14,bike_15,bike_16,bike_17,bike_18,bike_19,bike_20,bike_21,bike_22,bike_23,bike_24,pan_1,pan_2,pan_3,pan_4,pan_5,pan_6,bed_1,bed_2,bed_3,bed_4,bed_5,bed_6,car_1,car_2,car_3,car_4,car_5,car_6,bucket_1,bucket_2,bucket_3,bucket_4,bucket_5,bucket_6
 }
 
 
@@ -203,4 +228,138 @@ export const scrolls=[
 {id:22,image:assets.bike_22},
 {id:23,image:assets.bike_23},
 {id:24,image:assets.bike_24},
+]
+
+
+
+export const newBars=[
+  {
+    id:1,
+    title:"Up to 60% off | Cookware, kitchen tool & more",
+    text:"VAYA HauteChef Cast Iron Kadai, 24 cm, Pre-Seasoned & Naturally Non-Stick, 100% Pure & Toxin-Free, Deep Design for Frying & Curries, Induction Base, Rust-Resistant, Ergonomic Handles",
+    rate:"₹1,690.00",
+    prevrate:"M.R.P:₹1,890.00",
+    items:[
+      {
+        id:1,
+        image:assets.pan_1
+      },
+      {
+        id:2,
+        image:assets.pan_2
+      },
+      {
+        id:3,
+        image:assets.pan_3
+      },
+      {
+        id:4,
+        image:assets.pan_4
+      },
+      {
+        id:5,
+        image:assets.pan_5
+      },
+      {
+        id:6,
+        image:assets.pan_6
+      }
+    ]
+  },
+  {
+    id:1,title:"Up to 70% off | Curated home essentials ",
+    text:"Mattress Topper with Flip Memory Foam & Graphite Infused Cloud Foam, 2-in-1 Reversible Soft & Body Supportive Mattress Topper/Gadda, 5 Year Warranty (King Size, 72'x72'x2')",
+    rate:"₹7,978.00",
+    prevrate:"M.R.P:₹13,350",
+    items:[
+      {
+        id:1,
+        image:assets.bed_1
+      },
+      {
+        id:2,
+        image:assets.bed_2
+      },
+      {
+        id:3,
+        image:assets.bed_3
+      },
+      {
+        id:4,
+        image:assets.bed_4
+      },
+      {
+        id:5,
+        image:assets.bed_5
+      },
+      {
+        id:6,
+        image:assets.bed_6
+      }
+    ]
+  },
+  {
+    id:1,title:"Starting 199 | Bring joy home with every toy",
+    text:"BlackZone Kids Friction Powered DTX Car Monster Telescopic Toys for Boys Girls | Unbreakable Double Sided Pull Back Non-Electric Stunt Cars | Monster Truck (DTX Car Pack of 2)",
+    rate:"₹299.00",
+    prevrate:"M.R.P:₹1,299.00",
+    items:[
+      {
+        id:1,
+        image:assets.car_1
+      },
+      {
+        id:2,
+        image:assets.car_2
+      },
+      {
+        id:3,
+        image:assets.car_3
+      },
+      {
+        id:4,
+        image:assets.car_4
+      },
+      {
+        id:5,
+        image:assets.car_5
+      },
+      {
+        id:6,
+        image:assets.car_6
+      }
+    ]
+  },
+  {
+    id:1,title:"Up to 60% off | Cookware, kitchen tool & more",
+    rate:"₹299.00",
+    text:"BlackZone Kids Friction Powered DTX Car Monster Telescopic Toys for Boys Girls | Unbreakable Double Sided Pull Back Non-Electric Stunt Cars | Monster Truck (DTX Car Pack of 2)",
+    prevrate:"M.R.P:₹1,299.00",
+    items:[
+      {
+        id:1,
+        image:assets.bucket_1
+      },
+      {
+        id:2,
+        image:assets.bucket_2
+      },
+      {
+        id:3,
+        image:assets.bucket_3
+      },
+      {
+        id:4,
+        image:assets.bucket_4
+      },
+      {
+        id:5,
+        image:assets.bucket_5
+      },
+      {
+        id:6,
+        image:assets.bucket_6
+      }
+    ]
+  }
 ]
